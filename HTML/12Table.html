@@ -1,11 +1,156 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
-    
+    <h1>Table In HTML</h1>
+
+    <!--<table>: Defines the table.
+    <thead>: Groups the header content in a table.
+    <tr>: Defines a row in the table.
+    <th>: Defines a header cell in the table.
+    <tbody>: Groups the body content in a table.
+    <td>: Defines a standard cell in the table.-->
+
+    <hr>
+    <div style="text-align: center;">
+        <h2><b>01Basic Table:</b>
+            <br><i>A simple table with rows and columns.</i>
+        </h2>
+    </div>
+
+    <table border="1">
+        <tr>
+            <th>Header 1</th>
+            <th>Header 2</th>
+            <th>Header 3</th>
+        </tr>
+        <tr>
+            <td>Data 1</td>
+            <td>Data 2</td>
+            <td>Data 3</td>
+        </tr>
+    </table>
+    <hr>
+    <div style="text-align: center;">
+        <h2><b>02Table with Headings:</b>
+            <br><i>A table that includes headings using the &lt;thead&gt; tag.</i>
+        </h2>
+    </div>
+
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Header 1</th>
+                <th>Header 2</th>
+                <th>Header 3</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Data 1</td>
+                <td>Data 2</td>
+                <td>Data 3</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <hr>
+    <div style="text-align: center;">
+        <h2><b>03Table with Footers:</b>
+            <br><i>A table that includes footers using the &lt;tfoot&gt; tag.</i>
+        </h2>
+    </div>
+
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Header 1</th>
+                <th>Header 2</th>
+                <th>Header 3</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Data 1</td>
+                <td>Data 2</td>
+                <td>Data 3</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td>Footer 1</td>
+                <td>Footer 2</td>
+                <td>Footer 3</td>
+            </tr>
+        </tfoot>
+    </table>
+
+    <hr>
+    <div style="text-align: center;">
+        <h2><b>04Nested Tables:</b>
+            <br><i>A table within a table, which can be useful for displaying hierarchical data.</i>
+        </h2>
+    </div>
+    <table border="1">
+        <tr>
+            <td>
+                Outer Table
+                <table border="1">
+                    <tr>
+                        <td>Inner Table Data</td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+        
+    </table>
+    <hr>
+    <div style="text-align: center;">
+        <h2><b>05Table with Captions:</b>
+            <br><i>A table with a caption using the &lt;caption&gt; tag.</i>
+        </h2>
+
+        <table border="1">
+            <caption>Table Caption or Table Name</caption>
+            <tr>
+                <th>Header 1</th>
+                <th>Header 2</th>
+                <th>Header 3</th>
+            </tr>
+            <tr>
+                <td>Data 1</td>
+                <td>Data 2</td>
+                <td>Data 3</td>
+            </tr>
+        </table>
+
+        <hr>
+    <div style="text-align: center;">
+        <h2><b>05Table with Column Groups:</b>
+            <br><i>A table with grouped columns using the &lt;colgroup&gt; and &lt;col&gt; tags.</i>
+        </h2>
+        <table border="1">
+            <colgroup>
+                <col span="4" style="background-color:lightgrey">
+            </colgroup>
+            <tr>
+                <th>Header 1</th>
+                <th>Header 2</th>
+            </tr>
+            <tr>
+                <td>Data 1</td>
+                <td>Data 2</td>
+            </tr>
+        </table>    
+<hr>
+
+
 </body>
+
 </html>

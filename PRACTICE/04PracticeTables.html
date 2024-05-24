@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Sample HTML Table</h2>
+    <p>Tabe with border 1 no other formating attributes </p>
+        <table border="1">
+           
+            <thead>
+                <tr>
+                    <th>Fruit</th>
+                    <th>Qty</th>
+                    <th>Cost</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Apple</td>
+                    <td>1kg</td>
+                    <td>250</td>
+                </tr>
+                <tr>
+                    <td>Mango</td>
+                    <td>2kg</td>
+                    <td>300</td>
+                </tr>
+                <tr>
+                    <td>Orange</td>
+                    <td>1kg</td>
+                    <td>200</td>
+                </tr>
+            </tbody>
+        </table>
+    <hr>
+    <h2>Table border and width 50% and height 300 px</h2>
+    <table border="1" width="50%" height="300px">
+        <thead>
+            <tr>
+                <th>Fruit</th>
+                <th>Qty</th>
+                <th>Cost</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Apple</td>
+                <td>1kg</td>
+                <td>250</td>
+            </tr>
+            <tr>
+                <td>Mango</td>
+                <td>2kg</td>
+                <td>300</td>
+            </tr>
+            <tr>
+                <td>Orange</td>
+                <td>1kg</td>
+                <td>200</td>
+            </tr>
+        </tbody>
+    </table>
+    <hr>
+    <h2>Table border and width 100% and height 300 px inserted image attributes only width 100px</h2>
+    <blockquote><div style="text-align: center;"><table border="1" width="80%" height="300px">
+        <div style="text-align: center;"><caption><h2>Tourism in India</h2></caption></div>
+        <thead>
+            <tr>
+                <th>State</th>
+                <th>Capital</th>
+                <th>Famous Place Picture</th>
+                <th>Famous Place Details</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Andhra Pradesh</td>
+                <td>Amaravati</td>
+                <td><img src="../image/AmaravatiStupa.jpg" alt="This is Amravati Stupa" width="100px"></td>
+                <td>Amarāvati Stupa is a ruined Buddhist stūpa at the village of Amaravathi, Palnadu district, Andhra Pradesh</td>
+            </tr>
+            <tr>
+                <td>Arunachal Pradesh</td>
+                <td>Itanagar</td>
+                <td><img src="../image/Ita Fort.jpg" alt="This is Ita Fort" width="100px"></src>></td>
+                <td>Ita Fort - A historical fort built in the 14th-15th century with an impressive stone structure.</td>
+            </tr>
+            <tr>
+                <td>Assam</td>
+                <td>Dispur</td>
+                <td><img src="../image/KamakhyaTemple,Guwahati.jpg" alt="This is Kamakhya Temple" width="100px"></src>></td>
+                <td>Kamakhya Temple - A renowned Hindu temple dedicated to the goddess Kamakhya.</td>
+            
+            </tr>
+        </tbody>
+    </table>
+</div></blockquote>
+
+<hr>
+<h2>Table with Row Span</h2>
+<div style="text-align: center;"><caption><h2>Tourism in India</h2></caption></div>
+<blockquote><table border="1" width="80%" height="300px">
+    <tr>
+        <th>Famous Place</th>
+        <th>Details of Place</th>
+        <th>State</th>
+        <th>Capital</th>
+    </tr>
+    <tr>
+        <td rowspan="2"><img src="../image/AmaravatiStupa.jpg" width="100px">Amaravati Stupa</td>
+        <td>Amarāvati Stupa is a ruined Buddhist stūpa 
+</td>
+        <td>Andhra Pradesh
+</td>
+        <td>Amaravati</td>
+    </tr>
+    <tr>
+        <td>at Palnadu district, Andhra Pradesh</td>
+        <td>Data 2.3</td>
+        <td>Data 2.4</td>
+    </tr>
+    <tr>
+        <td rowspan="2"><img src="../image/Ita Fort.jpg" width="100px">Ita Fort</td>
+        <td>A historical fort built in the 14th-15th century </td>
+        <td>Arunachal Pradesh</td>
+        <td>Itanagar</td>
+    </tr>
+    <tr>
+        <td>with an impressive stone structure</td>
+        <td>Data 4.3</td>
+        <td>Data 4.4</td>
+    </tr>
+</table>  
+</blockquote>
+<hr>
+<h2>Table with Col Span</h2>
+
+<table border="1">
+    <tr>
+        <th>Header 1</th>
+        <th>Header 2</th>
+        <th>Header 3</th>
+        <th>Header 4</th>
+    </tr>
+    <tr>
+        <td>Data 1.1</td>
+        <td colspan="2">Col Span</td>
+        <td>Data 1.4</td>
+    </tr>
+    <tr>
+        <td>Data 2.1</td>
+        <td>Data 2.2</td>
+        <td>Data 2.3</td>
+        <td>Data 2.4</td>
+    </tr>
+    <tr>
+        <td>Data 3.1</td>
+        <td colspan="2">Col Span</td>
+        <td>Data 3.4</td>
+    </tr>
+    <tr>
+        <td>Data 4.1</td>
+        <td>Data 4.2</td>
+        <td>Data 4.3</td>
+        <td>Data 4.4</td>
+    </tr>
+</table>
+</body>
+</html>
