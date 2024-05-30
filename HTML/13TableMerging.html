@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table Merging</title>
+</head>
+
+<body>
+    <!--Heading of Table or Table Name by Caption Tag-->
+    <caption>Table of Content</caption>
+    <h1>Merging Table</h1>
+    <table border="1" Width="80%" height="200px" celspacing="10" cellpadding="10">
+        <!--Table border here is for full tabel border-->
+        <!--Width is for table width for entire table-->
+        <!--Height is for height of row.-->
+        <!--Celspacing is gap between 2 column-->
+        <!--Celpadding is gap in text of one column-->
+        <!--For formating always use thead, tbody and tfoot as containers for describing-->
+        <!-- alternatively you can use entire table center and style formating as well-->
+        <thead>
+            <tr>
+                <th>DATA</th>
+                <th>DATA</th>
+                <th>DATA</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td rowspan="2">Data</td>
+                <!--When we do row pan 2 row merges-->
+                <td>Data</td>
+                <td>Data</td>
+
+            </tr>
+            <tr>
+                <td>Data</td>
+                <td>Data</td>
+            </tr>
+            <tr>
+                <td>Data</td>
+                <td>Data</td>
+                <td>Data</td>
+
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="2">Data</td>
+                <!--When we do 2 collumn merges you increase the number that number of column merges-->
+                <td>Data</td>
+            </tr>
+        </tfoot>
+    </table>
+    <hr>
+    <div style="text-align: center;">
+        <table border="1" Width="80%" height="50px" celspacing="10" cellpadding="10">
+            <caption>This is My Table</caption>
+            <thead>
+                <tr>
+                    <th rowspan="2">DATA</th>
+                    <!--Merging Heading so create 2 heading first then merge with rowspan-->
+                    <th colspan="2">DATA</th>
+                    <th rowspan="2" colspan="2">DATA</th>
+                </tr>
+                <tr>
+                    <th>DATA</th>
+                    <th>DATA</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Data</td>
+                    <td>Data</td>
+                    <td>Data</td>
+                    <td>Data</td>
+                    <td>Data</td>
+                </tr>
+                <tr>
+                    <td>Data</td>
+                    <td>Data</td>
+                    <td>Data</td>
+                    <td>Data</td>
+                    <td>Data</td>
+                </tr>
+                <tr>
+                    <td>Data</td>
+                    <td>Data</td>
+                    <td>Data</td>
+                    <td>Data</td>
+                    <td>Data</td>
+                </tr>
+                <tr>
+                    <td>Data</td>
+                    <td>Data</td>
+                    <td>Data</td>
+                    <td>Data</td>
+                    <td>Data</td>
+                </tr>
+            </tbody>
+
+        </table>
+    </div>
+
+    <hr>
+
+
+</body>
+
+</html>

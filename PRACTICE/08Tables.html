@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table Practice with Merging</title>
+</head>
+
+<body>
+    <h2>Row Merge Table</h2>
+    <table border="1">
+        <tr>
+            <th>Header 1</th>
+            <th>Header 2</th>
+        </tr>
+        <tr>
+            <td rowspan="2">Rowspan 2</td>
+            <td>Cell 1</td>
+        </tr>
+        <tr>
+            <td>Cell 2</td>
+        </tr>
+    </table>
+    <hr>
+    <h2>Column Merge Table</h2>
+    <table border="1">
+        <tr>
+            <th>Header 1</th>
+            <th>Header 2</th>
+            <th>Header 3</th>
+        </tr>
+        <tr>
+            <td>Cell 1</td>
+            <td colspan="2">Colspan2</td>
+        </tr>
+        <tr>
+            <td>Cell 2</td>
+            <td>Cell 3</td>
+            <td>Cell 4</td>
+        </tr>
+
+    </table>
+
+    <table border="1" Width="80%" height="50px" celspacing="10" cellpadding="10">
+        <caption>This is My Table</caption>
+        <thead>
+            <tr>
+                <th rowspan="2">DATA</th>
+                <!--Merging Heading so create 2 heading first then merge with rowspan-->
+                <th colspan="2">DATA</th>
+                <th rowspan="2" colspan="2">DATA</th>
+            </tr>
+            <tr>
+                <th>DATA</th>
+                <th>DATA</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Data</td>
+                <td>Data</td>
+                <td>Data</td>
+                <td>Data</td>
+                <td>Data</td>
+            </tr>
+            <tr>
+                <td>Data</td>
+                <td>Data</td>
+                <td>Data</td>
+                <td>Data</td>
+                <td>Data</td>
+            </tr>
+            <tr>
+                <td>Data</td>
+                <td>Data</td>
+                <td>Data</td>
+                <td>Data</td>
+                <td>Data</td>
+            </tr>
+            <tr>
+                <td>Data</td>
+                <td>Data</td>
+                <td>Data</td>
+                <td>Data</td>
+                <td>Data</td>
+            </tr>
+        </tbody>
+
+    </table>
+<hr>
+
+<h2>Student Marks</h2>
+<table border="1">
+    <tr>
+        <th>Student Name</th>
+        <th>Subject</th>
+        <th>Marks</th>
+        <th>Total Marks</th>
+    </tr>
+    <tr>
+        <td rowspan="3">Sumit</td>
+        <td>Math</td>
+        <td>85</td>
+        <td rowspan="3">260</td>
+    </tr>
+    <tr>
+        <td>Science</td>
+        <td>90</td>
+    </tr>
+    <tr>
+        <td>English</td>
+        <td>85</td>
+    </tr>
+    <tr>
+        <td rowspan="3">Ravi</td>
+        <td>Math</td>
+        <td>78</td>
+        <td rowspan="3">243</td>
+    </tr>
+    <tr>
+        <td>Science</td>
+        <td>80</td>
+    </tr>
+    <tr>
+        <td>English</td>
+        <td>85</td>
+    </tr>
+    <tr>
+        <td rowspan="3">Parth</td>
+        <td>Math</td>
+        <td>88</td>
+        <td rowspan="3">268</td>
+    </tr>
+    <tr>
+        <td>Science</td>
+        <td>92</td>
+    </tr>
+    <tr>
+        <td>English</td>
+        <td>88</td>
+    </tr>
+</table>
+<hr>
+<h2>Fire Extinguisher Inventory</h2>
+    <table border="1">
+        <tr>
+            <th>Fire Extinguisher ID</th>
+            <th>Type</th>
+            <th>Capacity</th>
+            <th>Refill Date</th>
+            <th>Due Date</th>
+        </tr>
+        <tr>
+            <td>FE001</td>
+            <td>Water</td>
+            <td>9L</td>
+            <td>15-01-2023</td>
+            <td>15-01-2024</td>
+        </tr>
+        <tr>
+            <td>FE002</td>
+            <td>Water</td>
+            <td>9L</td>
+            <td>10-03-2023</td>
+            <td>10-03-2024</td>
+        </tr>
+        <tr>
+            <td>FE003</td>
+            <td>Water</td>
+            <td>9L</td>
+            <td>05-10-2023</td>
+            <td>05-10-2024</td>
+        </tr>
+        <tr>
+            <td>FE004</td>
+            <td>CO2</td>
+            <td>5kg</td>
+            <td>01-04-2023</td>
+            <td>01-04-2024</td>
+        </tr>
+        <tr>
+            <td>FE005</td>
+            <td>CO2</td>
+            <td>5kg</td>
+            <td>20-05-2023</td>
+            <td>20-05-2024</td>
+        </tr>
+        <tr>
+            <td>FE006</td>
+            <td>Foam</td>
+            <td>6L</td>
+            <td>16-06-2023</td>
+            <td>15-06-2024</td>
+        </tr>
+        <tr>
+            <td>FE007</td>
+            <td>Foam</td>
+            <td>6L</td>
+            <td>10-07-2023</td>
+            <td>10-07-2024</td>
+        </tr>
+        <tr>
+            <td>FE008</td>
+            <td>Dry Powder</td>
+            <td>4kg</td>
+            <td>05-08-2023</td>
+            <td>05-08-2024</td>
+        </tr>
+        <tr>
+            <td>FE009</td>
+            <td>Dry Powder</td>
+            <td>4kg</td>
+            <td>01-09-2023</td>
+            <td>01-09-2024</td>
+        </tr>
+        <tr>
+            <td colspan="2"><strong>Total Water Extinguishers</strong></td>
+            <td colspan="3">3</td>
+        </tr>
+        <tr>
+            <td colspan="2"><strong>Total CO2 Extinguishers</strong></td>
+            <td colspan="3">2</td>
+        </tr>
+        <tr>
+            <td colspan="2"><strong>Total Foam Extinguishers</strong></td>
+            <td colspan="3">2</td>
+        </tr>
+        <tr>
+            <td colspan="2"><strong>Total Dry Powder Extinguishers</strong></td>
+            <td colspan="3">2</td>
+        </tr>
+    </table>
+<hr>
+<h2>Full Stack Development Course Progress</h2>
+    <table border="1">
+        <tr>
+            <th>Class Day</th>
+            <th>Topic</th>
+            <th>Total Hours</th>
+            <th>Hours Completed</th>
+            <th>Progress</th>
+        </tr>
+        <tr>
+            <td>Month 1</td>
+            <td>HTML & CSS Basics</td>
+            <td>40</td>
+            <td>16</td>
+            <td>In-Completed</td>
+        </tr>
+        <tr>
+            <td>Month 2</td>
+            <td>JavaScript Fundamentals</td>
+            <td>40</td>
+            <td>0</td>
+            <td>In-Completed</td>
+        </tr>
+        <tr>
+            <td>Month 3</td>
+            <td>Advanced JavaScript</td>
+            <td>40</td>
+            <td>0</td>
+            <td>In-Completed</td>
+        </tr>
+        <tr>
+            <td>Month 4</td>
+            <td>Version Control with Git</td>
+            <td>40</td>
+            <td>0</td>
+            <td>In-Completed</td>
+        </tr>
+        <tr>
+            <td>Month 5</td>
+            <td>Introduction to Node.js</td>
+            <td>40</td>
+            <td>0</td>
+            <td>In-Completed</td>
+        </tr>
+        <tr>
+            <td>Month 6</td>
+            <td>React.js Basics</td>
+            <td>40</td>
+            <td>0</td>
+            <td>In-Completed</td>
+        </tr>
+        <tr>
+            <td>Month 7</td>
+            <td>Database Management with MongoDB</td>
+            <td>40</td>
+            <td>0</td>
+            <td>In-Completed</td>
+        </tr>
+        <!-- Additional rows for remaining days -->
+        <tr>
+            <td colspan="5">Progress Posted...</td>
+        </tr>
+        <tr>
+            <td colspan="2"><strong>Total Classes Completed</strong></td>
+            <td>280</td>
+            <td>16</td>
+            <td>16 / 280</td>
+        </tr>
+    </table>
+</body>
+
+</html>

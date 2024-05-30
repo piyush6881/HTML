@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Inputs</title>
+</head>
+
+<body>
+    <fieldset>
+        <legend>Name My Fieldset</legend>
+        <input type="text" placeholder="text"><br><br>
+        <!--input text-->
+        <input type="Name" placeholder="Full Name"><br><br>
+        <!--input text name-->
+        <input type="Password" placeholder="Password"><br><br>
+        <!--input text password-->
+        <input type="email" placeholder="email"><br><br>
+        <!--input text email-->
+        <input type="Phonenumber" placeholder="Phone Number"><br><br>
+        <!--input text phone number-->
+        <input type="url" placeholder="URL Your Website"><br><br>
+        <!--input text url in form demanding your web site-->
+        <input type="File"> <input type="submit"><br><br>
+        <!--input text upload file-->
+        <input type="Range" placeholder="Text Range"> <br><br>
+        <!--input text along is just sliding bar but range can be defined-->
+        <input type="date" placeholder="date"><br><br>
+        <!--input text date entry selection of date-->
+        <input type="time" placeholder="time"><br><br>
+        <!--input text time entry-->
+        <input type="datetime" placeholder="datetime"><br><br>
+        <!--input text date and time one common entry-->
+        <input type="datetime-local" placeholder="datetime-local"><br><br>
+        <!--input text of local time input-->
+        <input type="image" placeholder="image insert"><br><br>
+        <!--input text not certain but for inserting image-->
+        <input type="hidden" placeholder="hidden">
+        <!--input text hidden not certain of its use but not vissible. -->
+        <input type="search"><br><br>
+        <input type="Button" value="Button"><br><br>
+        <input type="reset"> <input type="submit"><br><br>
+
+
+    </fieldset>
+    </form>
+    <!--The <form> element is a container for different types of input elements, 
+    such as: text fields, checkboxes, radio buttons, submit buttons, etc.-->
+    <!--Start by inserting Fieldset-->
+    <!--HTML forms, GET and POST are two of the most common HTTP methods used to send data to a server-->
+    <!--The GET method is used to request data from a specified resource. 
+    When a form is submitted using GET, the form data is added to the URL as query parameters.(e.g., search forms)-->
+    <!--The POST method is used to send data to a server to create or update a resource. 
+    When a form is submitted using POST, the form data is included in the body of the HTTP request(e.g., passwords, personal information).-->
+    <h1>
+        <p>Get form starting with search Form </p>
+    </h1>
+    <!--if you want to Name and have identified or enveloped form to be created put Legend-->
+    <!--Now we will use Form command form stating action as search and method as get-->
+    <form action="/search" method="get">
+        <label for="query">Search</label>
+        <input type="text" id="query" name="query"> <br><br>
+        <!--Defining label if for say here query asking question and tab is search-->
+        <label for="name">Name</label>
+        <input type="text" id="Name" name="name"><br><br>
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email"><br><br>
+        <label for="gender">Gender</label>
+        <!--Radio Buttons: <input type="radio" id="male" name="gender" value="male" required> 
+            and <input type="radio" id="female" name="gender" value="female"> 
+            allow the user to select one gender. by grouping them only one can be selected -->
+        <input type="radio" id="male" name="gender" value="male" required>
+        <label for="male">Male</label>
+        <input type="radio" id="female" name="gender" value="female">
+        <label for="female">Female</label><br><br>
+        <!--We grouped input type as label was for gender, and both radio mal and female name attribute is same gender 
+        so only one can be selected.-->
+        <Label for="country">Country</Label>
+        <!--Drop-down Menu: <select id="country" name="country" required> 
+            provides a list of countries for the user to choose from.-->
+        <select id="country" name="country">
+            <option value="India">India</option>
+            <option value="USA">USA</option>
+            <option value="Canada">Canada</option>
+            <option value="Germany">Germany</option>
+        </select> <br><br>
+        <input type="submit" value="Submit">
+    </form>
+    <hr>
+
+
+
+</body>
+
+</html>

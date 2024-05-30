@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Tag</title>
+</head>
+
+<body>
+    <h1>Introduction to Form</h1>
+
+    <hr>
+    <h1>Example of Simple GET form</h1>
+    <!--(e.g., search forms).-->
+    <form action="" method="get">
+        <label for="query">Search</label>
+        <input type="text" id="query" name="query">
+        <input type="submit" Value="search">
+    </form>
+    <hr>
+
+    <h1>Example of POST Form</h1>
+    <!--(e.g., creating or updating a record)-->
+    <form action="/submit-form" method="post">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" required>
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required>
+        <input type="submit" value="submit">
+    </form>
+
+    <h1>Form Tag with Post</h1>
+    <!--Tag to the Form-->
+    </form>
+    <fieldset>
+        <legend>Tag The Form</legend>
+        <form action="" method="get" enctype="application/x-www-form-urlencoded">
+            <label for="fname">First Name</label>
+            <input type="text name" name="fname" id="fname" placeholder="First Name" required><br><br>
+            <!--Placehoder means display text you want inside input field-->
+            <label for="Password">Password</label>
+            <input type="Password" name="pass" id="pass" placeholder="Password" required><br>
+            <br>
+            <button>Submit</button>
+            <!--Form.html?fname=Piyush&pass=123456 with required it confirmes to be submitted.
+            submit will not accept without this input-->
+        </form>
+    </fieldset>
+
+</body>
+
+</html>
