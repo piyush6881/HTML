@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Semantic Tag</title>
+</head>
+<body>
+<!--Elements such as <header>, <footer> and <article> are all considered semantic 
+    because they accurately describe the purpose of the element and the type of content 
+    that is inside them-->
+<!--Elements such as <header>, <nav>, <section>, <article>, <aside>, and <footer> act more or less like <div> elements. 
+    They group other elements together into page sections. 
+    However where a <div> tag could contain any type of information, 
+        it is easy to identify what sort of information would go in a semantic <header> region.-->
+
+<h1>Semantic Tag</h1>
+<P> Importance First, it is much easier to read.</P><br>
+<p>Semantics refers to the meaning of a piece of code </p><br>
+<p>In HTML, for example, the h1 element is a semantic element,<br>
+    which gives the text it wraps around the role (or meaning) of "a top level heading on your page."</p>
+
+    <header>
+        header
+        <nav>
+            navigation
+        </nav>
+        <main>
+            main 
+        </main>
+        <div>
+            wrapper/ container
+        </div>
+    </header>
+    <section>
+        section / wrapper
+        <div>
+            wrapper/ container
+        </div>
+    </section>
+    <section>
+        section / wrapper 
+    </section>
+    <article>
+        article
+    </article>
+    <aside>
+        aside 
+    </aside>
+    <section>
+        section / wrapper 
+    </section>
+    <section>
+        section / wrapper 
+    </section>
+    <footer>
+        footer / wrapper
+    </footer> <br>
+<hr>
+
+<header>This is Header</header>
+<section> This Forms section
+	<article> Input Article here about Earth or description of the image. 
+		<figure> Indicates Figure Insert Here
+			<img src="../image/Earth.jpg" width="20%" height="150px">
+			<figcaption>This is Earth indicates Figure Caption</figcaption>
+		</figure>
+	</article>
+</section>
+<footer>Copyright in footer or contact in footer</footer>
+
+<hr>
+
+<!--Indicate if not using Semantic Tag-->
+<div id="header">This is Header</div>
+<div class="section"> using div but if class is not define establishing link will be Challange. 
+	<div class="article"> Input Article here about Earth or description of the image. 
+		<div class="figure">
+			<img src="../image/Earth.jpg" alt="This is Earth Image" width="20%" height="150px">
+			<div class="figcaption"> To establilsh link in div caption can be explained about image.</div>
+		</div>
+	</div>
+</div>
+<div id="footer"> Each div element closing is complex for identification in same tag.</div>
+
+
+
+</body>
+</html>
