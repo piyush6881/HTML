@@ -10,28 +10,25 @@
 <body>
     <table border="0" width="100%" height="100px">
         <tr>
-            <th><img src="../image/LOGO.jpg" height="50px"></th>
-            <th width="40%"></th>
+            <th><img src="../image/LOGO.jpg" height="90px"></th>
+            <th width="20%"></th>
             <th width="10%"><a href="../mytutorials/Index.html" target="ContentFrame">HOME</a></th>
-            <th width="20%">
-                <details>
-                    <summary>PRACTICE</summary>
-                    <ul style="text-align: left">
-                        <li><a href="../practice/01HTMLBasic.html" target="ContentFrame">HTML Basic</a></li>
-                        <li><a href="../practice/02HTMLFormating.html" target="ContentFrame">HTML
-                                Formating</a></li>
-                        <li><a href="../practice/03ListPathImage.html" target="ContentFrame">List Path
-                                Image</a></li>
-                        <li><a href="../practice/04PracticeTables.html" target="ContentFrame">Tables</a>
-                        </li>
-                        <li><a href="../practice/05HomeProject.html" target="ContentFrame">First Home
-                                Project</a></li>
-                        <li><a href="../practice/06WEBPROJECT.HTML" target="ContentFrame">Web Project01</a>
-                        </li>
-                    </ul>
-                </details>
+            <th width="30%">
+                <form>
+                    <label for="Practice">PRACTICE</label>
+                    <select id="Practice" name="Practice" onchange="navigateto" >
+                        <option value="Practice">Practice List</option>
+                        <option value="01HTMLBasic.html"><a href="../practice/01HTMLBasic.html" target="ContentFrame">HTML Basic</a></option>
+                        <option value="02HTMLFormating.html"><a href="../practice/02HTMLFormating.html" target="ContentFrame">HTML Formating</a></option>
+                        <option value="03ListPathImage.html"><a href="../practice/03ListPathImage.html" target="ContentFrame">List Path Image</a</option>
+                        <option value="04PracticeTables.html"><a href="../practice/04PracticeTables.html" target="ContentFrame">Tables</a></option>
+                        <option value="05HomeProject.html"><a href="../practice/05HomeProject.html" target="ContentFrame">First Home Project</a></option>
+                        <option value="06WEBPROJECT.html"><a href="../practice/06WEBPROJECT.HTML" target="ContentFrame">Web Project01</a></option>
+                    </select>
+
+                </form>
             </th>
-            <th width="10%">
+            <th width="30%">
                 <details>
                     <summary>TASK</summary>
                     <ul style="text-align: left">
@@ -108,7 +105,8 @@
     </div>
     <div Style="text-align:center">
         <p> &gt;<b>Copyright 2024</b> <i>Piyush Tripathi. All Rights Reserved.</i>&lt;</p>
-    </div>
+    </div>    
+    
 </body>
 
 </html>
