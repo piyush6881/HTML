@@ -14,21 +14,22 @@
                 <tr>
                     <th width="20%"><img src="../image/DominosLOGO.svg"></th>
                     <th width="30%"></th>
-                    <th width="20%"><button style="background-image: url(../IMAGE/DominosBackground.png);"><label
-                                for="Select"></label>
-                            <input type="radio" id="Delivery" name="Select" value="Delivery" required>
-                            <label for="Delivery">Delivery</label>
-                            <input type="radio" id="Pickup/Dine-in" name="Select" value="Pickup/Dine-in">
-                            <label for="Pickup/Dine-in">Pickup/Dine-in</label></button></th>
-                    <th width="20%"><img src="../image/locationwhite.png" width="15px" height="15px"><button
-                            style="background-image: url(../IMAGE/DominosBackground.png);"><label
-                                for="Location"></label>
-                            <input type="text" name="loction" id="Location" placeholder="Chandkheda, Ahmedabad"
-                                required>
-                        </button><img src="../image/Edit.png" width="15px" height="15px"></th>
-                    <th width="10%"><a href="../task/09MenuDominos.html" target="MENU"><button
-                                style="background-image: url(../IMAGE/DominosBackground.png);">My Account<br>
-                                login/signup</button></a></th>
+                    <th width="20%"><label for="Select"></label>
+                        <input type="radio" id="Delivery" name="Select" value="Delivery" required>
+                        <label style="color: white;" for="Delivery">Delivery</label>
+                        <input type="radio" id="Pickup/Dine-in" name="Select" value="Pickup/Dine-in">
+                        <label style="color: white;" for="Pickup/Dine-in">Pickup/Dine-in</label>
+                    </th>
+                    <th width="20%"><img src="../image/locationwhite.png" width="15px" height="15px"><label
+                            for="Location"></label>
+                        <input type="text" name="loction" id="Location" placeholder="Chandkheda, Ahmedabad" required>
+                        <img src="../image/Edit.png" width="15px" height="15px">
+                    </th>
+                    <th width="5%"><img src="../image/Usericon.png" width="20px" heigth="20px"></th>
+                    <th width="10%"><a style="color: white;"
+                            href="https://pizzaonline.dominos.co.in/postorder-ui/login.html?redirectUrl=menu">MyAccount
+                            <br>
+                            <span style="color: darkblue">login|signup</span></a></th>
                 </tr>
             </table>
         </nav>
@@ -38,7 +39,8 @@
         <nav>
             <table border="0" width="100%" height="10px">
                 <tr>
-                    <th width="9%"><button>Every Day Value</button></th>
+                    <!--Click on the menu button and each menu opens. each menu will have tabe dropdown as wel with image of customize-->
+                    <th width="9%"><button><a href="../task/09MenuDominos.html" Target="MENU">Every Day Value</a></button></th>
                     <th width="9%"><button>Recomended</button></th>
                     <th width="9%"><button>New Launches</button></th>
                     <th width="9%"><button>Ragi Pizza</button></th>
@@ -57,11 +59,12 @@
     <table border="1" width="100%" height="400px">
         <tr>
             <blockquote>
-                <th width="80%"></iframe></th>
+                <th width="80%"><iframe name="MENU" width="100%" height="100%"></iframe> </th>
             </blockquote>
             <blockquote>
                 <th width="20%" style="background-image: url(../image/AddToCart.png);" width="100%" height="400px">
-                    <iframe name="CART" width="100%" height="100%"></iframe></th>
+                    <iframe name="CART" width="80%" height="80%"></iframe>
+                </th>
             </blockquote>
         </tr>
     </table>
