@@ -40,35 +40,143 @@
             <table border="0" width="100%" height="10px">
                 <tr>
                     <!--Click on the menu button and each menu opens. each menu will have tabe dropdown as wel with image of customize-->
-                    <th width="9%"><button><a href="../task/09MenuDominos.html" Target="MENU">Every Day Value</a></button></th>
-                    <th width="9%"><button>Recomended</button></th>
-                    <th width="9%"><button>New Launches</button></th>
-                    <th width="9%"><button>Ragi Pizza</button></th>
-                    <th width="9%"><button>Veg Pizza</button></th>
-                    <th width="9%"><button>Bevarages</button></th>
-                    <th width="9%"><button>Sides</button></th>
-                    <th width="9%"><button>Pizza Mania</button></th>
-                    <th width="9%"><button>Value Combos</button></th>
-                    <th width="9%"><button>Desserts</button></th>
-                    <th width="9%"><button>No Onion No Garlic</button></th>
+                    <th width="9%"><button><a href="#EveryDayValue" Target="EveryDayValue" width="100%" height="100%">Every Day Value</a></button></th>
+                    <th width="9%"><button><a href="#Recommended" Target="Recommended" width="100%" height="100%">Recommended</a></button></th>
+                    <th width="9%"><button><a href="#New Launches" Target="New Launches" width="100%" height="100%">New Launches</a></button></th>
+                    <th width="9%"><button><a href="#Ragi Pizza" Target="Ragi Pizza" width="100%" height="100%">Ragi Pizza</a></button></th>
+                    <th width="9%"><button><a href="#Veg Pizza" Target="Veg Pizza" width="100%" height="100%">Veg Pizza</a></button></th>
+                    <th width="9%"><button><a href="#Bevarages" Target="Bevarages" width="100%" height="100%">Bevarages</a></button></th>
+                    <th width="9%"><button><a href="#Sides" Target="Sides" width="100%" height="100%">Sides</a></button></th>
+                    <th width="9%"><button><a href="#Pizza Mania" Target="Pizza Mania" width="100%" height="100%">Pizza Mania</a></button></th>
+                    <th width="9%"><button><a href="#Value Combos" Target="Value Combos" width="100%" height="100%">Value Combos</a></button></th>
+                    <th width="9%"><button><a href="#Desserts" Target="Desserts" width="100%" height="100%">Desserts</a></button></th>
+                    <th width="9%"><button><a href="#No Onion No Garlic" Target="No Onion No Garlic" width="100%" height="100%">No Onion No Garlic</a></button></th>
                 </tr>
             </table>
         </nav>
     </header>
     <hr>
-    <table border="1" width="100%" height="400px">
+    <table border="1" width="100%" height="400px" cellpadding="10">
         <tr>
             <blockquote>
-                <th width="80%"><iframe name="MENU" width="100%" height="100%"></iframe> </th>
-            </blockquote>
-            <blockquote>
-                <th width="20%" style="background-image: url(../image/AddToCart.png);" width="100%" height="400px">
-                    <iframe name="CART" width="80%" height="80%"></iframe>
+                <th width="80%" style="text-align: justify;">
+                    <fieldset>
+                        <legend Name="EveryDayValue">EveryDayValue</legend>
+                        <form action="" method="get" enctype="application/x-www-form-urlencoded">
+                            <table border="0" width="100%" height="300px" style="text-align: center;">
+                                <tr>
+                                    <th><a href="../image/BlazingOnion&Paprika.jpeg" target="CART"><img
+                                                src="../image/BlazingOnion&Paprika.jpeg" width="200px" height="100px"></a></th>
+                                    <th><a href="../image/Margherita.jpg" target="CART"><img
+                                        src="../image/Margherita.jpg" width="200px" height="100px"></a></th>
+                                    <th><a href="../image/Farmhouse.webp" target="CART"><img
+                                        src="../image/Farmhouse.webp" width="200px" height="100px"></a></th>
+                                </tr>
+                                <tr>
+                                    <td><b>Blazing Onion & Paprika</b><br>
+                                        Hot & spicy pizza with onion & red paprika toppings and a new spicy peri peri sauce on a
+                                        Domino's cheesy base.</td>
+                                    <td><b>Margherita</b><br>Classic delight with 100% real mozzarella cheese</td>
+                                    <td><b>Farmhouse</b><br>
+                                        Delightful combination of onion, capsicum, tomato & grilled mushroom</td>
+                                </tr>
+                                <tr>
+                                    <td width="200px">
+                                        <table border="0" width="100%" height="100px">
+                                            <tr>
+                                                <th><select id="Size" Name="Size" required>
+                                                        <option value="Regular">Regular</option>
+                                                        <option value="Large">Large</option>
+                                                        <option value="Medium">Medium</option>
+                                                    </select></th>
+                                                <th><select id="Crust" Name="Crust" required>
+                                                        <option value="New Hand Tosted">New Hand Tosted</option>
+                                                        <option value="100% Wheat Thin">100% Wheat Thin</option>
+                                                        <option value="Cheese Burst">Cheese Burst</option>
+                                                        <option value="Fresh Pan Pizza">Fresh Pan Pizza</option>
+                                                        <option value="Cheese Burst">Ragi Crust</option>
+                                                    </select></th>
+                
+                                            </tr>
+                                            <tr>
+                                                <td ><select id="Toppings" Name="Toppings" required>
+                                                        <option value="AddToppings">Added Toppings</option>
+                                                    </select></td>
+                                                <td><button><a href="../image/Checkout.png"
+                                                            target="CART" width="200px" height="350px">AddToCart</a></button></td>
+                
+                                            </tr>
+                                        </table>
+                                    </td>
+                                    <td width="200px">
+                                        <table border="0" width="100%" height="100px">
+                                            <tr>
+                                                <th><select id="Size" Name="Size" required>
+                                                        <option value="Regular">Regular</option>
+                                                        <option value="Large">Large</option>
+                                                        <option value="Medium">Medium</option>
+                                                    </select></th>
+                                                <th><select id="Crust" Name="Crust" required>
+                                                        <option value="New Hand Tosted">New Hand Tosted</option>
+                                                        <option value="100% Wheat Thin">100% Wheat Thin</option>
+                                                        <option value="Cheese Burst">Cheese Burst</option>
+                                                        <option value="Fresh Pan Pizza">Fresh Pan Pizza</option>
+                                                        <option value="Cheese Burst">Ragi Crust</option>
+                                                    </select></th>
+                
+                                            </tr>
+                                            <tr>
+                                                <td><select id="Toppings" Name="Toppings" required>
+                                                        <option value="AddToppings">Added Toppings</option>
+                                                    </select></td>
+                                                <td><button><a href="../image/Checkout.png"
+                                                    target="CART" width="200px" height="350px">AddToCart</a></button></td>
+                
+                                            </tr>
+                                        </table>
+                                    </td>
+                                    <td width="200px">
+                                        <table border="0" width="100%" height="100px">
+                                            <tr>
+                                                <th><select id="Size" Name="Size" required>
+                                                        <option value="Regular">Regular</option>
+                                                        <option value="Large">Large</option>
+                                                        <option value="Medium">Medium</option>
+                                                    </select></th>
+                                                <th><select id="Crust" Name="Crust" required>
+                                                        <option value="New Hand Tosted">New Hand Tosted</option>
+                                                        <option value="100% Wheat Thin">100% Wheat Thin</option>
+                                                        <option value="Cheese Burst">Cheese Burst</option>
+                                                        <option value="Fresh Pan Pizza">Fresh Pan Pizza</option>
+                                                        <option value="Cheese Burst">Ragi Crust</option>
+                                                    </select></th>
+                
+                                            </tr>
+                                            <tr>
+                                                <td><select id="Toppings" Name="Toppings" required>
+                                                        <option value="AddToppings">Added Toppings</option>
+                                                    </select></td>
+                                                <td><button><a href="../image/Checkout.png"
+                                                    target="CART" width="200px" height="350px">AddToCart</a></button></td>
+                
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                                
+                            </table>
+                
+                        </form>
+                    </fieldset>
                 </th>
             </blockquote>
+            
+                <th width="20%" style="background-image: url(../image/AddToCart.png);" width="100%" height="400px">
+                    <iframe name="CART" width="100%" height="100%"></iframe>
+                </th>
+            
         </tr>
     </table>
-
 </body>
 
 </html>
