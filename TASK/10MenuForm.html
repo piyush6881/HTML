@@ -4,118 +4,400 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MenuForm</title>
+    <title>Dominos Pizza</title>
 </head>
 
 <body>
-    <fieldset>
-        <legend>RECOMMENDED</legend>
-        <form action="" method="get" enctype="application/x-www-form-urlencoded">
-            <table border="0" width="100%" height="300px" style="text-align: center;">
+    <header>
+        <nav>
+            <table border="0" width="100%" height="20px" style="background-image: url(../IMAGE/DominosBackground.png);">
                 <tr>
-                    <th><a href="../image/BlazingOnion&Paprika.jpeg" target="CART"><img
-                                src="../image/BlazingOnion&Paprika.jpeg" width="200px" height="100px"></a></th>
-                    <th><a href="../image/Margherita.jpg" target="CART"><img
-                        src="../image/Margherita.jpg" width="200px" height="100px"></a></th>
-                    <th><a href="../image/Farmhouse.webp" target="CART"><img
-                        src="../image/Farmhouse.webp" width="200px" height="100px"></a></th>
+                    <th width="20%"><img src="../image/DominosLOGO.svg"></th>
+                    <th width="30%"></th>
+                    <th width="20%"><label for="Select"></label>
+                        <input type="radio" id="Delivery" name="Select" value="Delivery" required>
+                        <label style="color: white;" for="Delivery">Delivery</label>
+                        <input type="radio" id="Pickup/Dine-in" name="Select" value="Pickup/Dine-in">
+                        <label style="color: white;" for="Pickup/Dine-in">Pickup/Dine-in</label>
+                    </th>
+                    <th width="20%"><img src="../image/locationwhite.png" width="15px" height="15px"><label
+                            for="Location"></label>
+                        <input type="text" name="loction" id="Location" placeholder="Chandkheda, Ahmedabad" required>
+                        <img src="../image/Edit.png" width="15px" height="15px">
+                    </th>
+                    <th width="5%"><img src="../image/avatar.svg" width="30px" heigth="30px"></th>
+                    <th width="10%"><a style="color: white;"
+                            href="https://pizzaonline.dominos.co.in/postorder-ui/login.html?redirectUrl=menu">MyAccount
+                            <br>
+                            <span style="color:#55ccf6">login|signup</span></a></th>
                 </tr>
-                <tr>
-                    <td><b>Blazing Onion & Paprika</b><br>
-                        Hot & spicy pizza with onion & red paprika toppings and a new spicy peri peri sauce on a
-                        Domino's cheesy base.</td>
-                    <td><b>Margherita</b><br>Classic delight with 100% real mozzarella cheese</td>
-                    <td><b>Farmhouse</b><br>
-                        Delightful combination of onion, capsicum, tomato & grilled mushroom</td>
-                </tr>
-                <tr>
-                    <td width="200px">
-                        <table border="0" width="100%" height="100px">
-                            <tr>
-                                <th><select id="Size" Name="Size" required>
-                                        <option value="Regular">Regular</option>
-                                        <option value="Large">Large</option>
-                                        <option value="Medium">Medium</option>
-                                    </select></th>
-                                <th><select id="Crust" Name="Crust" required>
-                                        <option value="New Hand Tosted">New Hand Tosted</option>
-                                        <option value="100% Wheat Thin">100% Wheat Thin</option>
-                                        <option value="Cheese Burst">Cheese Burst</option>
-                                        <option value="Fresh Pan Pizza">Fresh Pan Pizza</option>
-                                        <option value="Cheese Burst">Ragi Crust</option>
-                                    </select></th>
-
-                            </tr>
-                            <tr>
-                                <td ><select id="Toppings" Name="Toppings" required>
-                                        <option value="AddToppings">Added Toppings</option>
-                                    </select></td>
-                                <td><button><a href="../image/BlazingOnion&Paprika.jpeg"
-                                            target="CART">AddToCart</a></button></td>
-
-                            </tr>
-                        </table>
-                    </td>
-                    <td width="200px">
-                        <table border="0" width="100%" height="100px">
-                            <tr>
-                                <th><select id="Size" Name="Size" required>
-                                        <option value="Regular">Regular</option>
-                                        <option value="Large">Large</option>
-                                        <option value="Medium">Medium</option>
-                                    </select></th>
-                                <th><select id="Crust" Name="Crust" required>
-                                        <option value="New Hand Tosted">New Hand Tosted</option>
-                                        <option value="100% Wheat Thin">100% Wheat Thin</option>
-                                        <option value="Cheese Burst">Cheese Burst</option>
-                                        <option value="Fresh Pan Pizza">Fresh Pan Pizza</option>
-                                        <option value="Cheese Burst">Ragi Crust</option>
-                                    </select></th>
-
-                            </tr>
-                            <tr>
-                                <td><select id="Toppings" Name="Toppings" required>
-                                        <option value="AddToppings">Added Toppings</option>
-                                    </select></td>
-                                <td><button><a href="../image/Margherita.jpg"
-                                    target="CART">AddToCart</a></button></td>
-
-                            </tr>
-                        </table>
-                    </td>
-                    <td width="200px">
-                        <table border="0" width="100%" height="100px">
-                            <tr>
-                                <th><select id="Size" Name="Size" required>
-                                        <option value="Regular">Regular</option>
-                                        <option value="Large">Large</option>
-                                        <option value="Medium">Medium</option>
-                                    </select></th>
-                                <th><select id="Crust" Name="Crust" required>
-                                        <option value="New Hand Tosted">New Hand Tosted</option>
-                                        <option value="100% Wheat Thin">100% Wheat Thin</option>
-                                        <option value="Cheese Burst">Cheese Burst</option>
-                                        <option value="Fresh Pan Pizza">Fresh Pan Pizza</option>
-                                        <option value="Cheese Burst">Ragi Crust</option>
-                                    </select></th>
-
-                            </tr>
-                            <tr>
-                                <td><select id="Toppings" Name="Toppings" required>
-                                        <option value="AddToppings">Added Toppings</option>
-                                    </select></td>
-                                <td><button><a href="../image/Farmhouse.webp"
-                                    target="CART">AddToCart</a></button></td>
-
-                            </tr>
-                        </table>
-                    </td>
-                </tr>
-                
             </table>
+        </nav>
+    </header>
+    <hr>
+    <header>
+        <nav>
+            <table border="0" width="100%" height="10px">
+                <tr>
+                    <!--Click on the menu button and each menu opens. each menu will have tabe dropdown as wel with image of customize-->
+                    <th width="9%"><button><a href="#EverydayValue" width="100%" height="100%">Every Day
+                                Value</a></button></th>
+                    <th width="9%"><button><a href="#Recommended" width="100%" height="100%">Recommended</a></button>
+                    </th>
+                    <th width="9%"><button><a href="#NewLaunches" width="100%" height="100%">New Launches</a></button>
+                    </th>
+                    <th width="9%"><button><a href="#RagiPizza" width="100%" height="100%">Ragi Pizza</a></button></th>
+                    <th width="9%"><button><a href="#VegPizza" width="100%" height="100%">Veg Pizza</a></button></th>
+                    <th width="9%"><button><a href="#Beverages" width="100%" height="100%">Bevarages</a></button></th>
+                    <th width="9%"><button><a href="#Sides" width="100%" height="100%">Sides</a></button></th>
+                    <th width="9%"><button><a href="#PizzaMania" width="100%" height="100%">Pizza Mania</a></button>
+                    </th>
+                    <th width="9%"><button><a href="#ValueCombos" width="100%" height="100%">Value Combos</a></button>
+                    </th>
+                    <th width="9%"><button><a href="#Desserts" width="100%" height="100%">Desserts</a></button></th>
+                    <th width="9%"><button><a href="#NoOnionNoGarlic" width="100%" height="100%">No Onion No
+                                Garlic</a></button></th>
+                </tr>
+            </table>
+        </nav>
+    </header>
+    <hr>
+    <main>
+        <section id="EveryDayValue">
+            <h2>EveryDayValue</h2>
+            <table border="1">
+                <tr>
+                    <th>
+                        <article>
+                            <img src="../image/BlazingOnion&Paprika.jpeg" width="200px">
+                            <h3>Blazing Onion & Paprika</h3>
+                            <p>Hot & spicy pizza with onion & red paprika toppings and a new spicy peri peri sauce on a
+                                Domino's cheesy base.</p>
+                            <label For="BlazingOnion&Paprika">Select Quantity</label>
+                            <Select id="BlazingOnion&Paprika" name="BlazingOnion&Paprika">
+                                <option Value="ThinCrust">Thin Crust</option>
+                                <option Value="CheeseBurst">Cheese Burst</option>
+                            </Select> 
+                            <button target="Order-Frame" onclick="DisplayOrder(BlazingOnion&Paprika,document.getElementById(ThinCrust).Value )">Add To Cart</button>
+                        </article>
+                    </th>
+                    <th>
+                        <article>
+                            <h3>Pepperoni</h3>
+                            <p>Pepperoni and extra Mozzarella Cheese</p>
+                            <p>Price:269Rs.</p>
+                        </article>
+                    </th>
+                    <th>
+                        <h2>Order Details</h2>
+                        <iframe id="Order-Frame" width="100%" height="200px"></iframe>
+                    </th>
+                </tr>
+            </table>
+        </section>
+            <section id="Recommended">
+                <h2>Recommended</h2>
+                <table border="1">
+                    <tr>
+                        <th>
+                            <article>
+                                <h3>Margherita</h3>
+                                <p>A Clasic delight with 100% real mozzarella Cheese</p>
+                                <p>Price:169Rs.</p>
+                            </article>
+                        </th>
+                        <th>
+                            <article>
+                                <h3>Pepperoni</h3>
+                                <p>Pepperoni and extra Mozzarella Cheese</p>
+                                <p>Price:269Rs.</p>
+                            </article>
+                        </th>
+                        <th>
+                            <article>
+                                <h3>Pepperoni</h3>
+                                <p>Pepperoni and extra Mozzarella Cheese</p>
+                                <p>Price:269Rs.</p>
+                            </article>
+                        </th>
+                    </tr>
+                </table>
+        </section>
+        <section id="NewLaunches">
+            <h2>New Launches</h2>
+            <table border="1">
+                <tr>
+                    <th>
+                        <article>
+                            <h3>Margherita</h3>
+                            <p>A Clasic delight with 100% real mozzarella Cheese</p>
+                            <p>Price:169Rs.</p>
+                        </article>
+                    </th>
+                    <th>
+                        <article>
+                            <h3>Pepperoni</h3>
+                            <p>Pepperoni and extra Mozzarella Cheese</p>
+                            <p>Price:269Rs.</p>
+                        </article>
+                    </th>
+                    <th>
+                        <article>
+                            <h3>Pepperoni</h3>
+                            <p>Pepperoni and extra Mozzarella Cheese</p>
+                            <p>Price:269Rs.</p>
+                        </article>
+                    </th>
+                </tr>
+            </table>
+    </section>
+    <section id="RagiPizza">
+        <h2>Ragi Pizza</h2>
+        <table border="1">
+            <tr>
+                <th>
+                    <article>
+                        <h3>Margherita</h3>
+                        <p>A Clasic delight with 100% real mozzarella Cheese</p>
+                        <p>Price:169Rs.</p>
+                    </article>
+                </th>
+                <th>
+                    <article>
+                        <h3>Pepperoni</h3>
+                        <p>Pepperoni and extra Mozzarella Cheese</p>
+                        <p>Price:269Rs.</p>
+                    </article>
+                </th>
+                <th>
+                    <article>
+                        <h3>Pepperoni</h3>
+                        <p>Pepperoni and extra Mozzarella Cheese</p>
+                        <p>Price:269Rs.</p>
+                    </article>
+                </th>
+            </tr>
+        </table>
+</section>
+<section id="VegPizza">
+    <h2>Veg Pizza</h2>
+    <table border="1">
+        <tr>
+            <th>
+                <article>
+                    <h3>Margherita</h3>
+                    <p>A Clasic delight with 100% real mozzarella Cheese</p>
+                    <p>Price:169Rs.</p>
+                </article>
+            </th>
+            <th>
+                <article>
+                    <h3>Pepperoni</h3>
+                    <p>Pepperoni and extra Mozzarella Cheese</p>
+                    <p>Price:269Rs.</p>
+                </article>
+            </th>
+            <th>
+                <article>
+                    <h3>Pepperoni</h3>
+                    <p>Pepperoni and extra Mozzarella Cheese</p>
+                    <p>Price:269Rs.</p>
+                </article>
+            </th>
+        </tr>
+    </table>
+</section>
+<section id="Beverages">
+    <h2>Beverages</h2>
+    <table border="1">
+        <tr>
+            <th>
+                <article>
+                    <h3>Margherita</h3>
+                    <p>A Clasic delight with 100% real mozzarella Cheese</p>
+                    <p>Price:169Rs.</p>
+                </article>
+            </th>
+            <th>
+                <article>
+                    <h3>Pepperoni</h3>
+                    <p>Pepperoni and extra Mozzarella Cheese</p>
+                    <p>Price:269Rs.</p>
+                </article>
+            </th>
+            <th>
+                <article>
+                    <h3>Pepperoni</h3>
+                    <p>Pepperoni and extra Mozzarella Cheese</p>
+                    <p>Price:269Rs.</p>
+                </article>
+            </th>
+        </tr>
+    </table>
+</section>
+<section id="Sides">
+    <h2>Sides</h2>
+    <table border="1">
+        <tr>
+            <th>
+                <article>
+                    <h3>Margherita</h3>
+                    <p>A Clasic delight with 100% real mozzarella Cheese</p>
+                    <p>Price:169Rs.</p>
+                </article>
+            </th>
+            <th>
+                <article>
+                    <h3>Pepperoni</h3>
+                    <p>Pepperoni and extra Mozzarella Cheese</p>
+                    <p>Price:269Rs.</p>
+                </article>
+            </th>
+            <th>
+                <article>
+                    <h3>Pepperoni</h3>
+                    <p>Pepperoni and extra Mozzarella Cheese</p>
+                    <p>Price:269Rs.</p>
+                </article>
+            </th>
+        </tr>
+    </table>
+</section>
+<section id="PizzaMania">
+    <h2>Pizza Mania</h2>
+    <table border="1">
+        <tr>
+            <th>
+                <article>
+                    <h3>Margherita</h3>
+                    <p>A Clasic delight with 100% real mozzarella Cheese</p>
+                    <p>Price:169Rs.</p>
+                </article>
+            </th>
+            <th>
+                <article>
+                    <h3>Pepperoni</h3>
+                    <p>Pepperoni and extra Mozzarella Cheese</p>
+                    <p>Price:269Rs.</p>
+                </article>
+            </th>
+            <th>
+                <article>
+                    <h3>Pepperoni</h3>
+                    <p>Pepperoni and extra Mozzarella Cheese</p>
+                    <p>Price:269Rs.</p>
+                </article>
+            </th>
+        </tr>
+    </table>
+</section>
+<section id="ValueCombos">
+    <h2>Value Combos</h2>
+    <table border="1">
+        <tr>
+            <th>
+                <article>
+                    <h3>Margherita</h3>
+                    <p>A Clasic delight with 100% real mozzarella Cheese</p>
+                    <p>Price:169Rs.</p>
+                </article>
+            </th>
+            <th>
+                <article>
+                    <h3>Pepperoni</h3>
+                    <p>Pepperoni and extra Mozzarella Cheese</p>
+                    <p>Price:269Rs.</p>
+                </article>
+            </th>
+            <th>
+                <article>
+                    <h3>Pepperoni</h3>
+                    <p>Pepperoni and extra Mozzarella Cheese</p>
+                    <p>Price:269Rs.</p>
+                </article>
+            </th>
+        </tr>
+    </table>
+</section>
+<section id="Desserts">
+    <h2>Desserts</h2>
+    <table border="1">
+        <tr>
+            <th>
+                <article>
+                    <h3>Margherita</h3>
+                    <p>A Clasic delight with 100% real mozzarella Cheese</p>
+                    <p>Price:169Rs.</p>
+                </article>
+            </th>
+            <th>
+                <article>
+                    <h3>Pepperoni</h3>
+                    <p>Pepperoni and extra Mozzarella Cheese</p>
+                    <p>Price:269Rs.</p>
+                </article>
+            </th>
+            <th>
+                <article>
+                    <h3>Pepperoni</h3>
+                    <p>Pepperoni and extra Mozzarella Cheese</p>
+                    <p>Price:269Rs.</p>
+                </article>
+            </th>
+        </tr>
+    </table>
+</section>
+<section id="NoOnionNoGarlic">
+    <h2>No Onion No Garlic</h2>
+    <table border="1">
+        <tr>
+            <th>
+                <article>
+                    <h3>Margherita</h3>
+                    <p>A Clasic delight with 100% real mozzarella Cheese</p>
+                    <p>Price:169Rs.</p>
+                </article>
+            </th>
+            <th>
+                <article>
+                    <h3>Pepperoni</h3>
+                    <p>Pepperoni and extra Mozzarella Cheese</p>
+                    <p>Price:269Rs.</p>
+                </article>
+            </th>
+            <th>
+                <article>
+                    <h3>Pepperoni</h3>
+                    <p>Pepperoni and extra Mozzarella Cheese</p>
+                    <p>Price:269Rs.</p>
+                </article>
+            </th>
+        </tr>
+    </table>
+</section>
+    </main>
 
-        </form>
-    </fieldset>
+    <hr>
+<footer>
+
+    <nav>
+        <table border="0" width="100%" height="10px" style="background-image: url(../IMAGE/FooterColor.png);">
+            <tr>
+                <th width="9%"><img src="../image/DominosLOGO.svg"></th>
+                <th width="9%"><button><a href="#Disclaimer" Target="Disclaimer" width="100%" height="100%">Disclaimer</a></button></th>
+                <th width="9%"><button><a href="#PrivacyPolicy" Target="PrivacyPolicy" width="100%" height="100%">PrivacyPolicy</a></button></th>
+                <th width="9%"><button><a href="#Faq" Target="Faq" width="100%" height="100%">FAQ</a></button></th>
+                <th width="9%"><button><a href="#Terms&Conditions" Target="Terms&Conditions" width="100%" height="100%">Terms & Conditions</a></button></th>
+                <th width="9%"><button><a href="#NutritionalInformation" Target="NutritionalInformation" width="100%" height="100%">Nutritional Information</a></button></th>
+                <th width="9%"><button><a href="#Feedback" Target="Feedback" width="100%" height="100%">Feedback</a></button></th>
+                <th width="9%"></th>
+                <th width="9%"></th>
+                <th width="9%"></th>
+                <th width="9%">DOWNLOAD APP</th>
+            </tr>
+        </table>
+    </nav>    
+</footer>
 </body>
 
 </html>
