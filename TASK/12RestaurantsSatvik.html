@@ -10,7 +10,8 @@
 <body>
     <header>
         <div style="text-align: center;">
-            <h1><img src="../image/Satvik.png" alt="This is Satvik Logo" width="100px" height="100px"></h1>
+            <h1><img src="../image/Satvik.png" alt="Satvik logo" width="100px" height="100px"><img
+                    src="../image/SatvikBanner.jpg" alt="This is Satvik Banner" width="60%" height="100px"></h1>
         </div>
         <hr>
         <blockquote>
@@ -37,10 +38,10 @@
             </nav>
     </header>
     <hr>
-    <table border="1" width="100%" height="600px">
+    <table border="0" width="100%" height="600px">
         <tr>
             <th width="80%" height="100%" rowspan="2">
-                <h3>Satvik: Purity Served with Simplicity</h3>
+                <h3>Satvik: <i>Purity Served with Simplicity...</i></h3>
                 <p><i>At Satvik, we believe in serving food that is pure, simple, and fresh. Our vision is to promote a
                         lifestyle that values health and well-being through the consumption of freshly prepared,
                         vegetarian food. We are committed to providing meals that are made to order using the freshest
@@ -62,36 +63,83 @@
                         Satvik: Purity Served with Simplicity is a restaurant dedicated to serving freshly prepared
                         vegetarian food. Everything is made to order using live vegetables and spices of your choice.
                         <br> <br>Our breakfast menu features an array of stuffed parathas, buttermilk, sweet lassi, and
-                        special seasonal vegetables. <br> <br><b>For lunch, we offer live vegetables cooked to perfection,
-                        special vegetable dishes, rice, breads, and delectable desserts. <br> <br>Dinner at Satvik
-                        includes upma, light snacks, vermicelli meals, paratha, and sabudana dishes.</i></p>
+                        special seasonal vegetables. <br> <br><b>For lunch, we offer live vegetables cooked to
+                            perfection,
+                            special vegetable dishes, rice, breads, and delectable desserts. <br> <br>Dinner at Satvik
+                            includes upma, light snacks, vermicelli meals, paratha, and sabudana dishes.</i></p>
 
             </th>
-            <th width="20%" height="100%"><iframe name="ADD" width="100%" height="200px"></iframe> add and offer will
-                run here</th>
+            <th width="20%" height="100%"><a href="#Offer" target="_blank"><img src="../image/MakeYourMealOffer.jpg"
+                        alt="Offer" width="100%" height="200px"></a></th>
         </tr>
         <tr>
 
-            <td height="300px">Offer Page</td>
+            <td height="300px"><a href="#Registeration" target="#Contact"><img src="../image/YourHallOfFame.jpg"
+                        alt="Your Hall Of Fame Compitition" width="100%" height="200px"></a></td>
         </tr>
     </table>
-    <table border="1" width="100%" height="50px">
+    <table border="0" width="100%" height="50px">
         <tr>
             <th><a href="" id="Booking" name="Booking" target="_top">
-                    <h2>Booking</h2>
+                    <h2>BOOKING</h2>
                 </a></th>
         </tr>
     </table>
     <hr>
-    <table border="1" width="100%" height="600px">
+    <table border="0" width="100%" height="600px">
         <tr>
-            <th width="40%" height="100%px"> Insert Form hear </th>
+            <th width="40%" height="100%px" style="text-align: justify;">
+                <table>
+                    <h2 style="text-align: center;">Restaurant Booking Form</h2><br>
+                    <form action="/submit_booking" method="Post">
+                        <tr>
+                            <td><label for="name">Full Name:</label></td>
+                            <td><input type="text" id="Name" name="Name" placeholder="Full Name" required></td>
+                        </tr>
+                        <tr>
+                            <td><Label for="Phone">Phone No.:</Label></td>
+                            <td><input type="tel" id="Phone" name="Phone" placeholder="Phone Number" required></td>
+                        </tr>
+                        <tr>
+                            <td><label for="email">Email:</label></td>
+                            <td><input type="email" id="email" name="email" placeholder="Email ID" required></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <lable for="date">Date:</lable>
+                            </td>
+                            <td><input type="date" id="date" name="date" required></td>
+                        </tr>
+                        <tr>
+                            <td><label for="time">Time:</label></td>
+                            <td><input type="time" id="time" name="time" required></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <lable for="Guests">Number of Guests:</lable>
+                            </td>
+                            <td><input type="number" id="guests" name="guests" mini="1" required></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <lable for="special_request">Special Request:</lable>
+                            </td>
+                            <td><textarea id="special_request" name="special_request" rows="6" cols="40"
+                                    placeholder="Special Request"></textarea></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td><input type="submit" value="Submit"></td>
+                        </tr>
+                    </form>
+                </table>
+            </th>
             <th width="60%" height="100%"><img src="../image/restaurant.png" alt="This is Satvik Interior" width="100%"
                     height="600px"></th>
         </tr>
     </table>
     <hr>
-    <table border="1" width="100%" height="50px">
+    <table border="0" width="100%" height="50px">
         <tr>
             <th width="100%"><a href="" id="Menu" Name="Menu" target="_top">
                     <h2>Menu</h2>
@@ -99,24 +147,49 @@
         </tr>
     </table>
     <hr>
-    <table border="1" width="100%" height="600px">
+    <table border="0" width="100%" height="600px">
         <tr>
-            <th width="40%" height="100%px">Breakfast Lunch and Dinner link</th>
-            <th width="60%" height="100%"> this will be I frame which will reflect menu of BFast Lunch & Dinner</th>
+            <th width="40%" height="100%px">
+                <h1 style="text-align: center;">MENU</h1>
+                <table border="0" width="100%" height="400px">
+                    <tr>
+                        <td><a href="../HTM_Practice/20SatvikMenuBF.html" target="Menu"><h1>Breakfast</h1></a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="../HTM_Practice/21SatvikMenuLunch.html" target="Menu"><h1>Lunch</h1></a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="../HTM_Practice/22SatvikMenuDinner.html" target="Menu"><h1>Dinner</h1></a></td>
+                    </tr>
+
+                </table>
+            <th width="60%" height="100%"><iframe name="Menu" width="100%" height="100%"></iframe></th>
         </tr>
     </table>
     <hr>
-    <table border="1" width="100%" height="50px" style="text-align: center;">
+    <table border="0" width="100%" height="50px" style="text-align: center;">
         <tr>
             <th width="100%"><a href="" id="contact" Name="Contact" target="_top">
                     <h2>Contact</h2>
                 </a></th>
         </tr>
-        <tr>
-            <th width="100%" height="300px"></th>
+       
+            <tr><th><h2>Satvik</h2><br>
+                <p><i>Chandkheda</i></p><br>
+                <p>Ahmedabad</p></tr>
+            </th>
+            <tr><th width="100%" height="300px"><iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14677.973535961673!2d72.5859404!3d23.1156344!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395e824bfc06cab9%3A0x3258997c54c18318!2sHSE-RM%20Solutions!5e0!3m2!1sen!2sin!4v1685533385380!5m2!1sen!2sin" width="100%" height="200" style="border:0;" allowfullscreen=""></iframe></th>
         </tr>
         <tr>
-            <td><img src="../image/Satvik.png" alt="This is Satvik LOGO" width="200px" height="200px"></td>
+            <td><img src="../image/SatvikBanner.jpg" alt="This is Satvik Banner" width="100%" height="150px"></td>
+        </tr>
+    </table>
+    <table border="0" width="100%" height="20Px">
+        <tr>
+            <th width="60%">Copyright @ Satvik </th>
+            <th width="10%"><button>Facebook</button></th>
+            <th width="10%"><button>Insta</button></th>
+            <th width="20%"><button>You Tube</button></th>
         </tr>
     </table>
     </blockquote>
