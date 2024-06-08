@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inventory Input Form</title>
+</head>
+
+<body>
+    <h1>Inventory Input Form</h1>
+    <form action="/submit-inventory" method="post">
+        <table border="0" width="100%" style="text-align: justify;">
+           <tr>
+            <th><label for="date">Date:</label></th>
+            <th><input type="date" id="date" name="date" required></th>
+           </tr>
+           <tr>
+            <th><label for="material_unique_id">Material Unique ID:</label></th>
+            <th><input type="text" id="material_unique_id" name="material_unique_id" required></th>
+           </tr>
+            <tr>
+                <th><label for="item_code">Item code:</label></th>
+                <th><input type="text" id="item_code" name="item_code" placeholder="Item Code" required></th>
+            </tr>
+            <tr>
+                <th><label for="item_name">Item Name:</label></th>
+                <th><input type="text" id="item_name" name="item_name" placeholder="Item Name" required></th>
+            </tr>
+            <tr>
+                <th><label for="Category">Category:</label></th>
+                <th><input type="text" id="Category" name="Category" required></th>
+            </tr>
+            <tr>
+                <th><label for="material_sub_category">Material Sub Category:</label></th>
+                <th><input type="text" id="material_sub_category" name="material_sub_category" required></th>
+            </tr>
+            <tr>
+                <th><label for="storage_tag">Storage Tag (4 level):</label><br></th>
+                <th><input type="checkbox" id="storage_level1" name="storage_level" value="Level 1">
+                    <label for="storage_level1">Level 1</label><br>
+                    <input type="checkbox" id="storage_level2" name="storage_level" value="Level 2">
+                    <label for="storage_level2">Level 2</label><br>
+                    <input type="checkbox" id="storage_level3" name="storage_level" value="Level 3">
+                    <label for="storage_level3">Level 3</label><br>
+                    <input type="checkbox" id="storage_level4" name="storage_level" value="Level 4">
+                    <label for="storage_level4">Level 4</label><br><br>
+                </th>
+                 </tr>
+                 <tr>
+                    <th><label for="hazardous">Hazardous Category:</label></th>
+                    <th><br>
+                        <input type="radio" id="hazardous_yes" name="hazardous" value="Yes" required>
+                        <label for="hazardous_yes">Yes</label><br>
+                        <input type="radio" id="hazardous_no" name="hazardous" value="No" required>
+                        <label for="hazardous_no">No</label><br><br></th>
+                 </tr>
+            <tr>
+                <th><label for="quantity">Quantity:</label></th>
+                <th><input type="number" id="quantity" name="quantity" required></th>
+            </tr>
+            <tr>
+                <th><label for="Price">Price Per Unit:</label></th>
+                <th><input type="number" id="Price" name="Price" step=0.01 required></th>
+            </tr>
+            <tr>
+                <th><label for="total_price">Total Price:</label></th>
+                <th> <input type="number" id="total_price" name="total_price" step="0.01" readonly>
+            </th>
+            </tr>
+            <tr>
+                <th><label for="Supplier">Supplier:</label></th>
+                <th><input type="text" id="Supplier" name="Supplier" placeholder="Supplier Name" required></th>
+            </tr>
+            <tr>
+                <th><label for="date_received">Date Received:</label></th>
+                <th><input type="date" id="date_received" name="date_received" required></th>
+            </tr>
+            <tr>
+                <th><label for="input_by">Input By:</label></th>
+                <th><input type="text" id="input_by" name="input_by" required></th>
+            </tr>
+            <tr>
+                <th></th>
+                <th><button type="button" onclick="generateQRCode()">Generate QR Code</button> <div id="qrcode"></div></th>
+            </tr>
+            <tr>
+                <th></th>
+                <th><input type="Submit" Value="Submit"></th>
+            </tr>
+        </table>
+    </form>
+</body>
+
+</html>
