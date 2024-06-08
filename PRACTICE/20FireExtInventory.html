@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fire Extinguisher</title>
+</head>
+
+<body>
+   <blockquote> <h1>Input Form Fire Extinguisher</h1>
+    <form>
+        <table border="1" width="100%" style="text-align: justify;">
+            <tr>
+                <th><label for="extinguisher">Extinguisher ID</label></th>
+                <th><input type="text" id="extinguisherID" name="extinguisherID" placeholder="extinguisherID" required>
+                </th>
+            </tr>
+            <tr>
+                <th><label for="typeEXT">Type Of Fire Extinguisher</label></th>
+                <th><select id="typeEXT" name="typeEXT" required>
+                        <option value="water">Water</option>
+                        <option value="drypowder">Dry Powder</option>
+                        <option value="co2">CO2</option>
+                        <option value="WetChemical">Wet Chemical</option>
+                    </select></th>
+            </tr>
+            <tr>
+                <th><label for="capacity">Capacity (kg)</label></th>
+                <th><input type="number" id="capacity" name="capacity" required></th>
+            </tr>
+            <tr>
+                <th><label for="mfgDate">Manufacturing Date:</label></th>
+                <th><input type="date" id="mfgDate" name="mfgDate" required></th>
+            </tr>
+            <tr>
+                <th>
+                    <location for="location">Location</location>
+                </th>
+                <th><input type="text" id="location" name="location" required></th>
+            </tr>
+            <tr>
+                <th><label for="department">Department</label></th>
+                <th><input type="text" id="department" name="department" required></th>
+            </tr>
+            <tr>
+                <th><label for="lastInspection">Last Inspection Date</label></th>
+                <th><input type="date" id="lastInspection" name="lastInspection" required></th>
+            </tr>
+            <tr>
+                <th><label for="hydroTestDue">Hydro Test Due Date:</label></th>
+                <th><input type="date" id="hydroTestDue" name="hydroTestDue" required></th>
+            </tr>
+            <tr>
+                <th><label for="refilldate">Next Refill Date</label></th>
+                <th><input type="date" id="refilldate" name="refilldate" required></th>
+            </tr>
+            <tr>
+                <th><label for="email">Email</label></th>
+                <th><input type="email" id="email" name="email" required></th>
+            </tr>
+            <tr>
+                <th></th>
+                <th><input type="submit" value="Submit"></th>
+            </tr>
+        </table>
+    </form></blockquote>
+</body>
+
+</html>

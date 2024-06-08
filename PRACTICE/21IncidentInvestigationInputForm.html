@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Incident Investigation Input Form</title>
+</head>
+
+<body>
+    <blockquote>
+        <h1>Incident Investigation Input Form</h1>
+        <form>
+            <table border="1" width="100%" style="text-align: justify;">
+
+                <tr>
+                    <th><label for="project">Project:</label></th>
+                    <th><input type="text" id="project" name="project" placeholder="Project Name" required></th>
+                </tr>
+                <tr>
+                    <th><label for="site">Site:</label></th>
+                    <th><input type="site" id="site" name="site" placeholder="Site Name" required></th>
+                </tr>
+                <tr>
+                    <th><label for="location">Location:</label></th>
+                    <th><input type="location" id="location" name="location" placeholder="Site Name" required></th>
+                </tr>
+                <tr>
+                    <th><label for="company_or_company_person">Contractor or Company Person:</label></th>
+                    <th><input type="radio" id="contractor" name="contractor_or_company_person" value="Contractor"
+                            required>
+                        <label for="contractor">Contractor</label>
+                        <input type="radio" id="company_person" name="contractor_or_company_person"
+                            value="Company Person" required>
+                        <label for="company_person">Company Person</label>
+                    </th>
+                </tr>
+                <tr>
+                    <th><label for="contractor_name">Contractor Name:</label></th>
+                    <th><input type="text" id="contractor_name" name="contractor_name" placeholder="ContractorName"
+                            required></th>
+                </tr>
+                <tr>
+                    <th><label for="department">Department:</label></th>
+                    <th><input type="text" id="department" name="department" placeholder="Department" required></th>
+                </tr>
+                <tr>
+                    <th><label for="person_name">Person Name:</label></th>
+                    <th><input type="text" id="person_name" name="person_name" placeholder="Person Name" required></th>
+                </tr>
+                <tr>
+                    <th><label for="injury_type">Injury Type:</label></th>
+                    <th><input type="text" id="injury_type" name="injury_type" placeholder="Injury Type" required></th>
+                </tr>
+                <tr>
+                    <th><label for="activity">Activity:</label></th>
+                    <th><input type="text" id="activity" name="activity" placeholder="Activity" required></th>
+                </tr>
+                <tr>
+                    <th><label for="permit_activity">Permit Activity:</label></th>
+                    <th><input type="radio" id="permit_yes" name="permit_activity" value="Yes" required>
+                        <label for="permit_yes">Yes</label>
+                        <input type="radio" id="permit_no" name="permit_activity" value="No" required>
+                        <label for="permit_no">No</label>
+                    </th>
+                </tr>
+                <tr>
+                    <th><label for="permit_number">Permit Number:</label></th>
+                    <th><input type="text" id="permit_number" name="permit_number">
+                        </div>
+                    </th>
+                </tr>
+                <tr>
+                    <th><label for="incident_description">Incident Description:</label> <input type="text"
+                            id="FileUpload" name="Fileupload" placeholder="FileUpload"><input type="submit"
+                            value="Submit"></th>
+                    <th><textarea id="incident_description" name="incident_description" rows="4" cols="50"
+                            required></textarea></th>
+                </tr>
+                <tr>
+                    <th><label for="immediate_action_taken">Immediate Action Taken:</label></th>
+                    <th><textarea id="immediate_action_taken" name="immediate_action_taken" rows="4" cols="50"
+                            required></textarea></th>
+                </tr>
+                <tr>
+                    <th><label for="root_cause">Root Cause:</label></th>
+                    <th><textarea id="root_cause" name="root_cause" rows="4" cols="50" required></textarea></th>
+                </tr>
+                <tr>
+                    <th><label for="additional_comments">Additional Comments:</label></th>
+                    <th><textarea id="additional_comments" name="additional_comments" rows="4" cols="50"></textarea>
+                    </th>
+                </tr>
+                <tr>
+                    <th></th>
+                    <th><input type="submit" value="Submit"></th>
+                </tr>
+            </table>
+        </form>
+    </blockquote>
+</body>
+
+</html>
