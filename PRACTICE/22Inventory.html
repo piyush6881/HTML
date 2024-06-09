@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inventory</title>
+</head>
+<body>
+<blockquote>
+<h1>Inventory</h1>
+<form action="submit_inventory" method="post">
+<fieldset>
+<legend>Inventory</legend>
+<label for="inventory">Inward Date</label>
+<input type="date" id="stock_dt" name="stock_dt"><br><br>
+<label for="inventory">Category</label>
+<input type="radio" name="goods_type" value="1_day">Short Exp. consume fresh <br>
+<input type="radio" name="goods_type" value="3_day">Short Exp. consume within 3 days <br>
+<input type="radio" name="goods_type" value="7_day">Short Exp. consume within 7 days <br>
+<input type="radio" name="goods_type" value="15_day">Mid. Exp. consume within 15 days<br>
+<input type="radio" name="goods_type" value="1_month">Mid. Exp. consume within 1 month <br>
+<input type="radio" name="goods_type" value="3_month">Long Exp. consume within 3 month <br>
+<input type="radio" name="goods_type" value="6_month">Short Exp. consume fresh <br>
+<input type="radio" name="goods_type" value="1_year">Long Exp. consume within 6 month <br>
+<input type="radio" name="goods_type" value="3YearsMore">Exp. Consume within 3 Years & More <br><br>
+
+<label for="inventory">Goods Type:</label>
+<input type="checkbox" name="Dairy_Products" value="DP01" onclick="showgoodsform()"><button><a href="#Dairy_Products" target="#Dairy_Products">Dairy Products</a></button>
+<input type="checkbox" name="Bakery_Items" value="BI01" onclick="showgoodsform()"><button><a href="#Bakery_Items" target="#Bakery_Items">Bakery Items</a></button>
+<input type="checkbox" name="Cereals_and_Grains" value="CAG01" onclick="showgoodsform()"><button><a href="#Cereals_and_Grains" target="#Cereals_and_Grains">Cereals and Grains</a></button>
+<input type="checkbox" name="Canned_and_Jared_Goods" value="CAJG01" onclick="showgoodsform()"><button><a href="#Canned_and_Jared_Goods" target="#Canned_and_Jared_Goods">Canned and Jared Goods</a></button>
+<input type="checkbox" name="Beverages" value="B01" onclick="showgoodsform()"><button><a href="#Beverages" target="#Beverages">Beverages</a></button>
+<input type="checkbox" name="Ready-to-eat-foods" value="RTEF01" onclick="showgoodsform()"><button><a href="#Ready-to-eat-foods" target="#Ready-to-eat-foods">Ready-to-eat-foods</a></button>
+<br><br>
+</fieldset>
+</form></blockquote>   
+<hr>
+<form action="Goods_type" method="post">
+    <h2>Dairy Products</h2>
+    <table border="1" width="100%">
+        <tr>
+            <th>Item Name</th>
+            <th>Total Stock Value</th>
+            <th>Previous Stock Qty</th>
+            <th>Previous Unit Cost</th>
+            <th>Current Qty Received</th>
+            <th>Unit Cost</th>
+            <th>Current Stock Cost</th>
+            <th>Vendor/Supplier Name</th>
+            <th>Vendor/Supplier Contact</th>
+            <th>Indent Stock At Value</th>
+            <th>Indent Stock At Qty</th>
+        </tr>
+        <tr>
+            <td><input type="text" name="item_name[]"></td>
+            <td><input type="text" name="Total_Stock_Value[]"></td>
+            <td><input type="text" name="Previous_Stock_Qty[]"></td>
+            <td><input type="number" name="Previous_Unit_Cost[]"></td>
+            <td><input type="text" name="Current_Qty_Received[]"></td>
+            <td><input type="number" name="unit_cost[]"></td>
+            <td><input type="text" name="current_stock_cost[]"></td>
+            <td><input type="text" name="vendor_name[]"></td>
+            <td><input type="text" name="vendor_contact[]"></td>
+            <td><input type="text" name="Indent_stock_value[]"></td>
+            <td><input type="number" name="Indent_stock_qty[]"></td>
+        </tr>
+    </table>
+    <br>
+    <button type="button" onclick="addRow()">Add Another Item</button>
+
+<input type="submit" value="Submit">
+</form>
+<hr>
+<form action="Goods_type" method="post">
+    <h2>Bakery Items</h2>
+    <table border="1" width="100%">
+        <tr>
+            <th>Item Name</th>
+            <th>Total Stock Value</th>
+            <th>Previous Stock Qty</th>
+            <th>Previous Unit Cost</th>
+            <th>Current Qty Received</th>
+            <th>Unit Cost</th>
+            <th>Current Stock Cost</th>
+            <th>Vendor/Supplier Name</th>
+            <th>Vendor/Supplier Contact</th>
+            <th>Indent Stock At Value</th>
+            <th>Indent Stock At Qty</th>
+        </tr>
+        <tr>
+            <td><input type="text" name="item_name[]"></td>
+            <td><input type="text" name="Total_Stock_Value[]"></td>
+            <td><input type="text" name="Previous_Stock_Qty[]"></td>
+            <td><input type="number" name="Previous_Unit_Cost[]"></td>
+            <td><input type="text" name="Current_Qty_Received[]"></td>
+            <td><input type="number" name="unit_cost[]"></td>
+            <td><input type="text" name="current_stock_cost[]"></td>
+            <td><input type="text" name="vendor_name[]"></td>
+            <td><input type="text" name="vendor_contact[]"></td>
+            <td><input type="text" name="Indent_stock_value[]"></td>
+            <td><input type="number" name="Indent_stock_qty[]"></td>
+        </tr>
+    </table>
+    <br>
+    <button type="button" onclick="addRow()">Add Another Item</button>
+
+<input type="submit" value="Submit">
+</form>
+<hr>
+<form action="Goods_type" method="post">
+    <h2>Cereals and Grains</h2>
+    <table border="1" width="100%">
+        <tr>
+            <th>Item Name</th>
+            <th>Total Stock Value</th>
+            <th>Previous Stock Qty</th>
+            <th>Previous Unit Cost</th>
+            <th>Current Qty Received</th>
+            <th>Unit Cost</th>
+            <th>Current Stock Cost</th>
+            <th>Vendor/Supplier Name</th>
+            <th>Vendor/Supplier Contact</th>
+            <th>Indent Stock At Value</th>
+            <th>Indent Stock At Qty</th>
+        </tr>
+        <tr>
+            <td><input type="text" name="item_name[]"></td>
+            <td><input type="text" name="Total_Stock_Value[]"></td>
+            <td><input type="text" name="Previous_Stock_Qty[]"></td>
+            <td><input type="number" name="Previous_Unit_Cost[]"></td>
+            <td><input type="text" name="Current_Qty_Received[]"></td>
+            <td><input type="number" name="unit_cost[]"></td>
+            <td><input type="text" name="current_stock_cost[]"></td>
+            <td><input type="text" name="vendor_name[]"></td>
+            <td><input type="text" name="vendor_contact[]"></td>
+            <td><input type="text" name="Indent_stock_value[]"></td>
+            <td><input type="number" name="Indent_stock_qty[]"></td>
+        </tr>
+    </table>
+    <br>
+    <button type="button" onclick="addRow()">Add Another Item</button>
+
+<input type="submit" value="Submit">
+</form>
+<hr>
+<form action="Goods_type" method="post">
+    <h2>Canned and Jared Goods</h2>
+    <table border="1" width="100%">
+        <tr>
+            <th>Item Name</th>
+            <th>Total Stock Value</th>
+            <th>Previous Stock Qty</th>
+            <th>Previous Unit Cost</th>
+            <th>Current Qty Received</th>
+            <th>Unit Cost</th>
+            <th>Current Stock Cost</th>
+            <th>Vendor/Supplier Name</th>
+            <th>Vendor/Supplier Contact</th>
+            <th>Indent Stock At Value</th>
+            <th>Indent Stock At Qty</th>
+        </tr>
+        <tr>
+            <td><input type="text" name="item_name[]"></td>
+            <td><input type="text" name="Total_Stock_Value[]"></td>
+            <td><input type="text" name="Previous_Stock_Qty[]"></td>
+            <td><input type="number" name="Previous_Unit_Cost[]"></td>
+            <td><input type="text" name="Current_Qty_Received[]"></td>
+            <td><input type="number" name="unit_cost[]"></td>
+            <td><input type="text" name="current_stock_cost[]"></td>
+            <td><input type="text" name="vendor_name[]"></td>
+            <td><input type="text" name="vendor_contact[]"></td>
+            <td><input type="text" name="Indent_stock_value[]"></td>
+            <td><input type="number" name="Indent_stock_qty[]"></td>
+        </tr>
+    </table>
+    <br>
+    <button type="button" onclick="addRow()">Add Another Item</button>
+
+<input type="submit" value="Submit">
+</form>
+<hr>
+<form action="Goods_type" method="post">
+    <h2>Beverages</h2>
+    <table border="1" width="100%">
+        <tr>
+            <th>Item Name</th>
+            <th>Total Stock Value</th>
+            <th>Previous Stock Qty</th>
+            <th>Previous Unit Cost</th>
+            <th>Current Qty Received</th>
+            <th>Unit Cost</th>
+            <th>Current Stock Cost</th>
+            <th>Vendor/Supplier Name</th>
+            <th>Vendor/Supplier Contact</th>
+            <th>Indent Stock At Value</th>
+            <th>Indent Stock At Qty</th>
+        </tr>
+        <tr>
+            <td><input type="text" name="item_name[]"></td>
+            <td><input type="text" name="Total_Stock_Value[]"></td>
+            <td><input type="text" name="Previous_Stock_Qty[]"></td>
+            <td><input type="number" name="Previous_Unit_Cost[]"></td>
+            <td><input type="text" name="Current_Qty_Received[]"></td>
+            <td><input type="number" name="unit_cost[]"></td>
+            <td><input type="text" name="current_stock_cost[]"></td>
+            <td><input type="text" name="vendor_name[]"></td>
+            <td><input type="text" name="vendor_contact[]"></td>
+            <td><input type="text" name="Indent_stock_value[]"></td>
+            <td><input type="number" name="Indent_stock_qty[]"></td>
+        </tr>
+    </table>
+    <br>
+    <button type="button" onclick="addRow()">Add Another Item</button>
+
+<input type="submit" value="Submit">
+</form>
+<hr>
+<form action="Goods_type" method="post">
+    <h2>Ready-to-eat-foods</h2>
+    <table border="1" width="100%">
+        <tr>
+            <th>Item Name</th>
+            <th>Total Stock Value</th>
+            <th>Previous Stock Qty</th>
+            <th>Previous Unit Cost</th>
+            <th>Current Qty Received</th>
+            <th>Unit Cost</th>
+            <th>Current Stock Cost</th>
+            <th>Vendor/Supplier Name</th>
+            <th>Vendor/Supplier Contact</th>
+            <th>Indent Stock At Value</th>
+            <th>Indent Stock At Qty</th>
+        </tr>
+        <tr>
+            <td><input type="text" name="item_name[]"></td>
+            <td><input type="text" name="Total_Stock_Value[]"></td>
+            <td><input type="text" name="Previous_Stock_Qty[]"></td>
+            <td><input type="number" name="Previous_Unit_Cost[]"></td>
+            <td><input type="text" name="Current_Qty_Received[]"></td>
+            <td><input type="number" name="unit_cost[]"></td>
+            <td><input type="text" name="current_stock_cost[]"></td>
+            <td><input type="text" name="vendor_name[]"></td>
+            <td><input type="text" name="vendor_contact[]"></td>
+            <td><input type="text" name="Indent_stock_value[]"></td>
+            <td><input type="number" name="Indent_stock_qty[]"></td>
+        </tr>
+    </table>
+    <br>
+    <button type="button" onclick="addRow()">Add Another Item</button>
+
+<input type="submit" value="Submit">
+</form>
+</body>
+</html>
